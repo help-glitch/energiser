@@ -9,77 +9,99 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .pill-button { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .pill-button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1); }
+        .pill-button:hover { transform: translateY(-3px); box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.3); }
+        .energy-pill:hover { box-shadow: 0 15px 30px -5px rgba(249, 115, 22, 0.3); }
     </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="bg-white text-slate-900 leading-relaxed">
 
-    <nav class="py-6 px-6 border-b border-slate-50">
+    <nav class="py-6 px-6 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <img src="Energiser Logo.png" alt="Energiser" class="h-10 md:h-12">
-            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 border border-slate-200 px-3 py-1 rounded-full">Referral Partner</span>
+            <div class="flex items-center gap-4">
+                <span class="hidden sm:inline text-[10px] font-bold uppercase tracking-widest text-slate-400">Referral Partner</span>
+                <a href="#compare" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-700 transition">Start Saving</a>
+            </div>
         </div>
     </nav>
 
-    <header class="py-20 px-6 bg-slate-50">
+    <header class="pt-20 pb-16 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
-                The smarter way to <span class="text-blue-600 underline decoration-blue-200 underline-offset-8">Energise</span> your savings.
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 text-slate-900">
+                Less stress. <br class="hidden md:block"> <span class="text-blue-600">Lower bills.</span>
             </h1>
-            <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-10">
-                We've partnered with Australia's leading providers to help you compare, switch, and save on the essentials. Simple, fast, and free.
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                Energiser connects you with Australia's leading providers to help you slash your home expenses. Fast, free, and built for locals.
             </p>
         </div>
     </header>
 
-    <section class="py-24 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <section id="compare" class="py-16 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             
-            <div class="flex flex-col items-center text-center p-8 bg-white border border-slate-100 rounded-[3rem] shadow-sm">
-                <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6">
-                    <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 flex flex-col justify-between group transition-all duration-500 hover:border-blue-200">
+                <div>
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-extrabold mb-4">Home Insurance</h2>
+                    <p class="text-slate-500 mb-10 text-lg leading-relaxed">Powered by <strong>Honey Insurance</strong>. Get a quote in 3 minutes and see how much you could save on your premiums today.</p>
                 </div>
-                <h2 class="text-3xl font-bold mb-4">Home Insurance</h2>
-                <p class="text-slate-500 mb-10 leading-relaxed">Protect your home and contents. Compare dozens of policies in minutes and find a premium that fits your budget.</p>
-                <a href="YOUR_INSURANCE_LINK_HERE" class="pill-button w-full bg-blue-600 text-white font-bold py-5 px-8 rounded-full text-lg">
-                    Compare Insurance Quotes
+                <a href="YOUR_HONEY_LINK_HERE" class="pill-button w-full bg-blue-600 text-white font-bold py-5 rounded-full text-center text-lg shadow-lg">
+                    Get Honey Quote
                 </a>
             </div>
 
-            <div class="flex flex-col items-center text-center p-8 bg-white border border-slate-100 rounded-[3rem] shadow-sm">
-                <div class="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mb-6">
-                    <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 flex flex-col justify-between group transition-all duration-500 hover:border-orange-200">
+                <div>
+                    <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-extrabold mb-4">Energy & Gas</h2>
+                    <p class="text-slate-500 mb-10 text-lg leading-relaxed">Stop paying the loyalty tax. Compare the market through our partner <strong>Connect Simple</strong> and find a cheaper plan instantly.</p>
                 </div>
-                <h2 class="text-3xl font-bold mb-4">Energy & Gas</h2>
-                <p class="text-slate-500 mb-10 leading-relaxed">Don't pay the loyalty tax. We'll help you check the market for the latest rates and connect your services instantly.</p>
-                <a href="YOUR_ENERGY_LINK_HERE" class="pill-button w-full bg-slate-900 text-white font-bold py-5 px-8 rounded-full text-lg">
-                    Compare Energy Plans
+                <a href="YOUR_ENERGY_LINK_HERE" class="pill-button energy-pill w-full bg-slate-900 text-white font-bold py-5 rounded-full text-center text-lg shadow-lg">
+                    Compare Plans
                 </a>
             </div>
 
         </div>
     </section>
 
-    <section class="py-12 border-t border-slate-100 bg-slate-50/50">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Trusted Partner Referral Service</p>
-            <div class="flex flex-wrap justify-center gap-8 opacity-40 grayscale">
-                </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-slate-400 py-20 px-6">
+    <footer class="bg-slate-900 text-slate-400 py-24 px-6">
         <div class="max-w-4xl mx-auto">
-            <div class="mb-12 text-center">
-                <img src="Energiser Logo.png" alt="Energiser" class="h-8 mx-auto mb-8 brightness-0 invert opacity-50">
-                <p class="text-sm">© 2026 Energiser.com.au. All rights reserved.</p>
+            <div class="text-center mb-16">
+                <img src="Energiser Logo.png" alt="Energiser" class="h-8 mx-auto mb-6 brightness-0 invert opacity-40">
+                <p class="text-xs uppercase tracking-widest font-bold">Energiser Referral Service</p>
             </div>
-            
-            <div class="border-t border-slate-800 pt-10 text-[11px] leading-relaxed space-y-4">
-                <h3 class="font-bold text-slate-200 uppercase tracking-wider text-xs">Terms & Conditions</h3>
-                <div id="terms-content">
-                    <p>PASTE YOUR TERMS AND CONDITIONS TEXT HERE. This section is designed to handle long-form legal text comfortably.</p>
-                    <p>Energiser.com.au operates as a referral partner. We do not provide financial advice. Commissions may be earned on successful connections made through our partner links.</p>
+
+            <div class="grid gap-10 text-[11px] leading-[1.8] border-t border-white/10 pt-12">
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase mb-4 tracking-wider">Important Information & Disclosures</h4>
+                    <div class="space-y-4">
+                        <p>
+                            We recommend you read the Product Disclosure Statement (PDS) before you make a decision. 
+                            Energiser is a referral partner of <strong>Connect Simple</strong>, who hold direct partnerships with the insurance and energy providers displayed. 
+                            Any insurance product mentioned is 100% owned and managed by <strong>Honey Insurance</strong>.
+                        </p>
+                        <p>
+                            Please note that quotes provided via partner links are indicative and subject to change based on further questions by the provider. 
+                            Energiser does not compare all insurers or products in the market. We do not hold an Australian Financial Services Licence (AFSL). 
+                            Any information provided on this website is general in nature and does not take into account your personal objectives, financial situation, or needs.
+                        </p>
+                        <p>
+                            Before making any decision about whether to purchase a product, you should consider whether the advice is suitable for you and read the PDS and Terms & Conditions directly on the provider's website. 
+                            Once you click through to a partner's site, all responsibility for the product and service lies with that provider.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-10 border-t border-white/5 text-[10px]">
+                    <p>© 2026 Energiser.com.au. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </div>
