@@ -3,40 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energiser | Compare & Save</title>
+    <title>Energiser | Compare, Connect & Save</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        .vibe-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body class="bg-slate-50">
 
-    <header class="vibe-gradient text-white py-16 px-6 text-center">
-        <h1 class="text-5xl font-bold mb-4 tracking-tight">energiser</h1>
-        <p class="text-xl opacity-90 max-w-2xl mx-auto">Helping my mates slash their bills. Compare home insurance and energy prices in seconds.</p>
-    </header>
+    <nav class="bg-white shadow-sm py-4">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <img src="Energiser Logo.png" alt="Energiser Logo" class="h-12">
+            <div class="hidden md:block text-sm font-semibold text-gray-600">
+                <span class="mr-4 text-blue-600 italic">Official Referrer Partner</span>
+                <a href="#upload" class="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition">Analyze My Bill</a>
+            </div>
+        </div>
+    </nav>
 
-    <main class="max-w-4xl mx-auto py-12 px-6 grid gap-8 md:grid-cols-2">
-        
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 card-hover">
-            <div class="text-blue-600 text-4xl mb-4">🏠</div>
-            <h2 class="text-2xl font-bold mb-2">Home Insurance</h2>
-            <p class="text-gray-600 mb-6">Found a great deal through my partnership. Check if you can save on your premium.</p>
-            <a href="YOUR_INSURANCE_REFERRAL_LINK_HERE" class="inline-block w-full text-center bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Check My Rate →</a>
+    <section class="hero-bg py-20 px-6 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                Stop overpaying for your <span class="text-blue-600">Home Services.</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Compare and connect your electricity, gas, and home insurance in minutes. We help Australians find better deals every day.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-blue-600 text-white text-lg font-bold px-10 py-4 rounded-lg shadow-xl hover:bg-blue-700 transition">Compare Online</a>
+                <a href="#upload" class="bg-white text-blue-600 border-2 border-blue-600 text-lg font-bold px-10 py-4 rounded-lg hover:bg-blue-50 transition">Upload Bill for Review</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-800">Our Services</h2>
+            <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 card-hover">
-            <div class="text-yellow-500 text-4xl mb-4">⚡</div>
-            <h2 class="text-2xl font-bold mb-2">Energy Bills</h2>
-            <p class="text-gray-600 mb-6">Upload your bill and compare the market. Most people save over $300/year.</p>
-            <a href="YOUR_ENERGY_REFERRAL_LINK_HERE" class="inline-block w-full text-center bg-gray-900 text-white font-bold py-3 rounded-lg hover:bg-black">Compare Now →</a>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 uppercase tracking-wide text-slate-800">Home Insurance</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">Protect your biggest asset for less. Compare quotes from Australia's leading insurers through our partner portal.</p>
+                <a href="YOUR_INSURANCE_LINK" class="font-bold text-blue-600 hover:text-blue-800 text-lg underline">Check Premiums →</a>
+            </div>
+
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300">
+                <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 uppercase tracking-wide text-slate-800">Energy & Gas</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">The market moves fast. Make sure you aren't on a 'lazy' rate. Connect your new home or switch your current plan today.</p>
+                <a href="YOUR_ENERGY_LINK" class="font-bold text-blue-600 hover:text-blue-800 text-lg underline">Compare Rates →</a>
+            </div>
         </div>
+    </section>
 
-    </main>
+    <section id="upload" class="bg-slate-900 py-20 px-6">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-4 text-center">Let us do the work</h2>
+                <p class="text-gray-600 text-center mb-10">Upload a recent bill and our team will analyze it and find the best available rates for you—free of charge.</p>
+                
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 uppercase mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 uppercase mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 uppercase mb-2">Phone Number</label>
+                            <input type="tel" name="phone" required class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 uppercase mb-2">Upload Bill (PDF or Photo)</label>
+                        <input type="file" name="bill" required class="w-full p-4 border-2 border-dashed border-gray-200 rounded-xl bg-gray-50 text-gray-500">
+                    </div>
+                    <button type="submit" class="w-full bg-orange-500 text-white font-extrabold py-5 rounded-xl text-xl hover:bg-orange-600 transform hover:scale-[1.02] transition shadow-lg">
+                        Get My Free Savings Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <footer class="text-center py-12 text-gray-400 text-sm">
-        <p>© 2026 Energiser.com.au | Hand-curated deals for friends.</p>
+    <footer class="py-12 px-6 text-center text-gray-500 text-sm">
+        <p class="mb-4">Energiser.com.au is an independent referral partner.</p>
+        <p>&copy; 2026 Energiser. All rights reserved.</p>
     </footer>
 
 </body>
